@@ -1,6 +1,14 @@
-# 0.5
+# 1.0.0
 
 ## Breaking Changes
+
+ * Migrate from Gtk2 to Gtk3, which replaces rc theming with css theming (Ivan Malison)
+
+## New Features
+
+## Bug Fixes
+
+# 0.5.0
 
 ## New Features
 
