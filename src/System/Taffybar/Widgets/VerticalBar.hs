@@ -29,13 +29,14 @@ data VerticalBarState = VerticalBarState
 data BarDirection = HORIZONTAL | VERTICAL
 
 data BarConfig
-  = BarConfig -- | Color of the border drawn around the widget
-     { barBorderColor :: (Double, Double, Double)
-     -- | The background color of the widget
+  = BarConfig
+    { -- | Color of the border drawn around the widget
+      barBorderColor :: (Double, Double, Double)
+      -- | The background color of the widget
     , barBackgroundColor :: Double -> (Double, Double, Double)
-     -- | A function to determine the color of the widget for the current data point
+      -- | A function to determine the color of the widget for the current data point
     , barColor :: Double -> (Double, Double, Double)
-     -- | Number of pixels of padding around the widget
+      -- | Number of pixels of padding around the widget
     , barPadding :: Int
     , barWidth :: Int
     , barDirection :: BarDirection}
